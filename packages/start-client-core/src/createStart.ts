@@ -76,6 +76,7 @@ function dedupeSerializationAdapters(
       if (current.extends) {
         dedupeSerializationAdapters(deduped, current.extends)
       }
+      current.extends = undefined
     }
   }
 }
